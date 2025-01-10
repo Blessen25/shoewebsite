@@ -4,6 +4,7 @@ import './api.css';
 const Api_component = () => {
     return (
         <>
+            <h1>Api component</h1>
         </>
     )
 }

@@ -1,10 +1,12 @@
 import React from 'react';
+import Api_component from '../components/apicomponents/api.tsx';
 
-const main = () => {
+const Main_component = () => {
     return (
         <>
+            <Api_component />
         </>
     )
 }
 
-export default main
+export default Main_component

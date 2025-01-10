@@ -1,13 +1,12 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import Main_component from './screens/main_screen.tsx';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-
-    </div>
-  );
+    <Main_component />
+  )
 }
 
 export default App;
