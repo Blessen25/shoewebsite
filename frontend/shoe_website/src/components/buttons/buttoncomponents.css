@@ -6,10 +6,18 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: rgb(0, 129, 0);
+    background-color: #808D7C;
     color: white;
-    border-color: rgb(0, 129, 0);
+    border-color: #808D7C;
     border-radius: 5px;
     min-width: 8ch;
     max-width: 35ch;
+    transition: all .7s;
+    cursor: pointer;
+}
+
+.Buttondiv:hover{
+    background-color: #5F6F65;
+    border-color: #5F6F65;
+
 }

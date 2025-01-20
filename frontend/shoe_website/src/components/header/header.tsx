@@ -10,7 +10,7 @@ const Header_comp = () => {
             <section id='Header'>
                 <div className="headerchildone">
                     <div className="logodiv">
-                        <img src="../assets/images/logo/QuickShoe(Light).png" alt="" className='Logoimg' />
+                        <img src="../assets/images/logo/QuickShoe.png" alt="Logoimg" className='Logoimg' />
                     </div>
                 </div>
                 <div className="headerchildtwo">
