@@ -1,9 +1,7 @@
 .Buttondiv {
     font-size: 16px;
     font-weight: 600;
-    padding: 10px 10px;
-    min-width: 120px;
-    /* max-width: 120px; */
+    padding: 10px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,4 +10,6 @@
     color: white;
     border-color: rgb(0, 129, 0);
     border-radius: 5px;
+    min-width: 8ch;
+    max-width: 35ch;
 }

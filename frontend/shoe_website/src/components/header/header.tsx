@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './header.css'
 import { ButtonTextOnly } from '../buttons/buttoncomponents.tsx';
 
 const Header_comp = () => {
+
+    const [lightmode, setLightMode] = useState(true);
     return (
         <>
             <section id='Header'>
@@ -18,7 +20,12 @@ const Header_comp = () => {
                     <a href="#">Collection</a>
                 </div>
                 <div className="headerchildthree">
-                    <ButtonTextOnly link={true} text='Hello' fullwidth={false} />
+                    <ButtonTextOnly link={true} text='Login' fullwidth={false} />
+                    <div className='lightmodediv'>
+                        <div className="innerlightmodecircle">
+
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
