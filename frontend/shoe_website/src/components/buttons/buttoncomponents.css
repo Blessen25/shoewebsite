@@ -1,0 +1,15 @@
+.Buttondiv {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 10px;
+    min-width: 120px;
+    /* max-width: 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(0, 129, 0);
+    color: white;
+    border-color: rgb(0, 129, 0);
+    border-radius: 5px;
+}

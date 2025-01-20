@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css'
+import { ButtonTextOnly } from '../buttons/buttoncomponents.tsx';
 
 const Header_comp = () => {
     return (
@@ -17,7 +18,7 @@ const Header_comp = () => {
                     <a href="#">Collection</a>
                 </div>
                 <div className="headerchildthree">
-
+                    <ButtonTextOnly link={true} text='Hello' fullwidth={false} />
                 </div>
             </section>
         </>

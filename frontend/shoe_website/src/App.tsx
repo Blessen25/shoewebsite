@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Main_component from './screens/main_screen.tsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/home/home.tsx';
+import Home from './components/Home/home.tsx';
 import Header_comp from './components/header/header.tsx';
 import About from './components/about/about.tsx';
 import 'bootstrap/dist/css/bootstrap.min.css';

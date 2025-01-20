@@ -1,7 +1,10 @@
 import { CSSProperties } from 'react';
 
 export interface ButtonTextOnlyProps {
-    text?: string;
+    text: string;
+    link: boolean;
+    fullwidth: boolean;
+    route?: string;
     stylecstm?: CSSProperties;
 
 }
