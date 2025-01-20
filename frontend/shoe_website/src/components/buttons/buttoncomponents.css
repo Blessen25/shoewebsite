@@ -21,3 +21,26 @@
     border-color: #5F6F65;
 
 }
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .Buttondiv{
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .Buttondiv{
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .Buttondiv{
+        padding: 5px 12px;
+        font-size: 10px;
+    }
+}

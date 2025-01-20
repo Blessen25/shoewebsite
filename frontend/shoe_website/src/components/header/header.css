@@ -28,7 +28,7 @@
 }
 
 .logodiv {
-    width: 200px;
+    width: 160px;
     height: 110px;
     object-fit: cover;
 }
@@ -79,6 +79,31 @@
     transition: all .7s;
 }
 
+.darkmode{
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    background-color: #5F6F65;
+    transition: all .7s;
+    
+}
+
+.innerdarkmodecircle{
+    background-color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    transition: all .7s;
+    margin-left: 31px;
+}
+
+.innerdarkmodecircle:hover{
+    background-color: #C9DABF;
+}
+
 .innerlightmodecircle {
     background-color: #808D7C;
     border-radius: 50%;
@@ -87,8 +112,112 @@
     transition: all .7s;
 }
 
-.lightmodediv:hover{
+.innerlightmodecircle:hover{
+    background-color: #5F6F65;
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .headerchildtwo a{
+        font-size: 15px;
+    }
+
+    .headerchildtwo a:hover{
+        font-size: 17px;
+    }
+
+    .logodiv{
+        width: 120px;
+        height: 84px;
+    } 
+
+    .lightmodediv{
+        width: 54px;
+        height: 22px;
+    }
+
     .innerlightmodecircle{
-        background-color: #5F6F65;
+        width: 18px;
+        height: 18px;
+    }
+
+    .darkmode{
+        width: 54px;
+        height: 22px;
+    }
+
+    .innerdarkmodecircle{
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .headerchildtwo{
+        display: none;
+    }
+
+    .headerchildone{
+        width: 50%;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-left: 20px;
+    }
+    
+    .headerchildthree{
+        width: 50%;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-right: 20px;
+    }
+    .lightmodediv{
+        width: 54px;
+        height: 22px;
+    }
+
+    .innerlightmodecircle{
+        width: 18px;
+        height: 18px;
+    }
+
+    .darkmode{
+        width: 54px;
+        height: 22px;
+    }
+
+    .innerdarkmodecircle{
+        width: 18px;
+        height: 18px;
+    }
+    .logodiv{
+        width: 120px;
+        height: 84px;
+    } 
+}
+
+@media screen and (max-width: 575px) {
+    .logodiv{
+        width: 100px;
+        height: 84px;
+    } 
+
+    .lightmodediv{
+        width: 46px;
+        height: 20px;
+    }
+
+    .innerlightmodecircle{
+        width: 16px;
+        height: 16px;
+    }
+
+    .darkmode{
+        width: 46px;
+        height: 20px;
+    }
+
+    .innerdarkmodecircle{
+        width: 16px;
+        height: 16px;
     }
 }
