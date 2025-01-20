@@ -1,8 +1,8 @@
 import React from 'react';
 import './header.css'
 
-const Header_comp = () =>{
-    return(
+const Header_comp = () => {
+    return (
         <>
             <section id='Header'>
                 <div className="headerchildone">
@@ -12,7 +12,7 @@ const Header_comp = () =>{
 
                 </div>
                 <div className="headerchildthree">
-                    
+
                 </div>
             </section>
         </>
