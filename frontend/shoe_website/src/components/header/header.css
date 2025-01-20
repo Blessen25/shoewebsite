@@ -3,6 +3,7 @@
     height: 120px;
     border: 2px solid black;
     display: flex;
+    background-color: #FAFAFA;
 }
 
 .headerchildone {
