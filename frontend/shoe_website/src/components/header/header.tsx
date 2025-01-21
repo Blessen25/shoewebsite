@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './header.css'
-import { ButtonTextOnly } from '../buttons/buttoncomponents.tsx';
+import { ButtontextandIcon, ButtonTextOnly } from '../buttons/buttoncomponents.tsx';
+import { FaUserAlt } from 'react-icons/fa';
 
 const Header_comp = () => {
 
     const [lightmode, setLightMode] = useState(true);
 
-    const handlelightmodechange = () =>{
+    const handlelightmodechange = () => {
         setLightMode((prevval) => !prevval)
     }
 
@@ -26,9 +27,10 @@ const Header_comp = () => {
                     <a href="#">Collection</a>
                 </div>
                 <div className="headerchildthree">
-                    <ButtonTextOnly link={true} text='Login' fullwidth={false} />
+                    {/* <ButtonTextOnly link={true} text='Login' fullwidth={false} /> */}
+                    <ButtontextandIcon link={false} text='Login' fullwidth={false} route='#' icon={<FaUserAlt />} />
                     <div className={`${lightmode ? ('lightmodediv') : ('darkmode')}`}>
-                        <div className={`${lightmode? ('innerlightmodecircle'): ('innerdarkmodecircle')}`} onClick={handlelightmodechange}>
+                        <div className={`${lightmode ? ('innerlightmodecircle') : ('innerdarkmodecircle')}`} onClick={handlelightmodechange}>
 
                         </div>
                     </div>
