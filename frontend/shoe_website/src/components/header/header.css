@@ -4,6 +4,7 @@
     display: flex;
     background-color: #9CA986;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    position: relative;
 }
 
 .headerchildone {
@@ -116,6 +117,12 @@
     background-color: #5F6F65;
 }
 
+@media screen and (min-width: 767px) {
+    .headerchildmenulink{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 991px) and (min-width: 767px) {
     .headerchildtwo a{
@@ -161,7 +168,7 @@
         width: 50%;
         justify-content: flex-start;
         gap: 20px;
-        margin-left: 20px;
+        margin-left: 60px;
     }
     
     .headerchildthree{
@@ -193,6 +200,19 @@
         width: 120px;
         height: 84px;
     } 
+    .headerchildmenulink{
+        display: block;
+        position: absolute;
+        top: 38px;
+        left: 34px;
+        font-size: 24px;
+        color: #808D7C;
+        transition: all .7s;
+    }
+
+    .headerchildmenulink:hover{
+        color: #5F6F65;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -219,5 +239,9 @@
     .innerdarkmodecircle{
         width: 16px;
         height: 16px;
+        margin-left: 25px;
+    }
+    .headerchildmenulink{
+        font-size: 20px;
     }
 }
