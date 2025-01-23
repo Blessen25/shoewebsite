@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './header.css'
 import { ButtontextandIcon, ButtonTextOnly } from '../buttons/buttoncomponents.tsx';
-import { FaBars, FaLink, FaUserAlt } from 'react-icons/fa';
+import { FaBars, FaHome, FaLink, FaUserAlt } from 'react-icons/fa';
 
 const Header_comp = () => {
 
@@ -45,6 +45,10 @@ const Header_comp = () => {
                     </div>
                 </div>
             </section>
+            <div className="overlaysidebar"></div>
+            <div className="sidebar">
+                <div><a href="#"><span><FaHome /></span>Home</a></div>
+            </div>
         </>
     )
 }
