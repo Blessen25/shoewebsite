@@ -8,13 +8,13 @@ export const ButtonTextOnly: React.FC<ButtonTextOnlyProps> = (props) => {
         <>
             {props.link ? (
                 <>
-                    <Link to={props.route ? (props.route) : ('')} className={`Buttondiv ${props.stylecstm} ${props.fullwidth ? ('w-100') : ('')}`}>
+                    <Link to={props.route ? (props.route) : ('#')} className={`Buttondiv ${props.stylecstm} ${props.fullwidth ? ('w-100') : ('')}`}>
                         {props.text}
                     </Link>
                 </>
             ) : (
                 <>
-                    <a href={props.route} className="Buttondiv">
+                    <a href={props.route ? (props.route) : ('#')} className={`Buttondiv ${props.stylecstm} ${props.fullwidth ? ('w-100') : ('')}`}>
                         {props.text}
                     </a>
                 </>
@@ -28,13 +28,37 @@ export const ButtontextandIcon: React.FC<ButtontextandIconProps> = (props) => {
         <>
             {props.link ? (
                 <>
-                    <Link to={props.route ? (props.route) : ('')}>
-                        {props.icon ? (<span>{props.icon}</span>) : ('')}
+                    <Link to={props.route ? (props.route) : ('#')} className={`Buttonflexrow ${props.stylecstm} ${props.fullwidth ? ('w-100') : ('')}`}>
+                        {props.icon ? (<span className="iconstyle">{props.icon}</span>) : ('')}
                         {props.text}</Link>
                 </>
             ) : (
                 <>
-                    <a href={props.route}>{props.route}</a>
+                    <a href={props.route ? (props.route) : ('#')} className={`Buttonflexrow ${props.stylecstm} ${props.fullwidth ? ('w-100') : ('')}`}>
+                        {props.icon ? (<span className="iconstyle">{props.icon}</span>) : ('')}
+                        {props.text}
+                    </a>
+                </>
+            )}
+        </>
+    )
+}
+
+export const ButtontextandIconReverse: React.FC<ButtontextandIconProps> = (props) => {
+    return (
+        <>
+            {props.link ? (
+                <>
+                    <Link to={props.route ? (props.route) : ('#')} className={`Buttonflexrowreverse ${props.stylecstm} ${props.fullwidth ? ('w-100') : ('')}`}>
+                        {props.icon ? (<span className="iconstyle">{props.icon}</span>) : ('')}
+                        {props.text}</Link>
+                </>
+            ) : (
+                <>
+                    <a href={props.route ? (props.route) : ('#')} className={`Buttonflexrow ${props.stylecstm} ${props.fullwidth ? ('w-100') : ('')}`}>
+                        {props.icon ? (<span className="iconstyle">{props.icon}</span>) : ('')}
+                        {props.text}
+                    </a>
                 </>
             )}
         </>

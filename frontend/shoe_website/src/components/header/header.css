@@ -49,7 +49,7 @@
     position: relative;
 }
 
-.headerchildtwo a::after{
+.headerchildtwo a::after {
     content: "";
     position: absolute;
     background-color: #5F6F65;
@@ -60,11 +60,11 @@
     transition: all .7s;
 }
 
-.headerchildtwo a:hover::after{
+.headerchildtwo a:hover::after {
     width: 100%;
 }
 
-.headerchildtwo a:hover{
+.headerchildtwo a:hover {
     color: #5F6F65;
     font-size: 20px;
 }
@@ -80,7 +80,7 @@
     transition: all .7s;
 }
 
-.darkmode{
+.darkmode {
     width: 60px;
     height: 30px;
     border-radius: 20px;
@@ -89,10 +89,10 @@
     padding: 2px;
     background-color: #5F6F65;
     transition: all .7s;
-    
+
 }
 
-.innerdarkmodecircle{
+.innerdarkmodecircle {
     background-color: white;
     border-radius: 50%;
     width: 24px;
@@ -101,7 +101,7 @@
     margin-left: 31px;
 }
 
-.innerdarkmodecircle:hover{
+.innerdarkmodecircle:hover {
     background-color: #C9DABF;
 }
 
@@ -113,94 +113,97 @@
     transition: all .7s;
 }
 
-.innerlightmodecircle:hover{
+.innerlightmodecircle:hover {
     background-color: #5F6F65;
 }
 
 @media screen and (min-width: 767px) {
-    .headerchildmenulink{
+    .headerchildmenulink {
         display: none;
     }
 }
 
 
 @media screen and (max-width: 991px) and (min-width: 767px) {
-    .headerchildtwo a{
+    .headerchildtwo a {
         font-size: 15px;
     }
 
-    .headerchildtwo a:hover{
+    .headerchildtwo a:hover {
         font-size: 17px;
     }
 
-    .logodiv{
+    .logodiv {
         width: 120px;
         height: 84px;
-    } 
+    }
 
-    .lightmodediv{
+    .lightmodediv {
         width: 54px;
         height: 22px;
     }
 
-    .innerlightmodecircle{
+    .innerlightmodecircle {
         width: 18px;
         height: 18px;
     }
 
-    .darkmode{
+    .darkmode {
         width: 54px;
         height: 22px;
     }
 
-    .innerdarkmodecircle{
+    .innerdarkmodecircle {
         width: 18px;
         height: 18px;
     }
 }
 
 @media screen and (max-width:767px) {
-    .headerchildtwo{
+    .headerchildtwo {
         display: none;
     }
 
-    .headerchildone{
+    .headerchildone {
         width: 50%;
         justify-content: flex-start;
         gap: 20px;
         margin-left: 60px;
     }
-    
-    .headerchildthree{
+
+    .headerchildthree {
         width: 50%;
         justify-content: flex-end;
         gap: 20px;
         margin-right: 20px;
     }
-    .lightmodediv{
+
+    .lightmodediv {
         width: 54px;
         height: 22px;
     }
 
-    .innerlightmodecircle{
+    .innerlightmodecircle {
         width: 18px;
         height: 18px;
     }
 
-    .darkmode{
+    .darkmode {
         width: 54px;
         height: 22px;
     }
 
-    .innerdarkmodecircle{
+    .innerdarkmodecircle {
         width: 18px;
         height: 18px;
     }
-    .logodiv{
+
+    .logodiv {
         width: 120px;
         height: 84px;
-    } 
-    .headerchildmenulink{
+    }
+
+    .headerchildmenulink {
         display: block;
         position: absolute;
         top: 38px;
@@ -210,38 +213,39 @@
         transition: all .7s;
     }
 
-    .headerchildmenulink:hover{
+    .headerchildmenulink:hover {
         color: #5F6F65;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .logodiv{
+    .logodiv {
         width: 100px;
         height: 84px;
-    } 
+    }
 
-    .lightmodediv{
+    .lightmodediv {
         width: 46px;
         height: 20px;
     }
 
-    .innerlightmodecircle{
+    .innerlightmodecircle {
         width: 16px;
         height: 16px;
     }
 
-    .darkmode{
+    .darkmode {
         width: 46px;
         height: 20px;
     }
 
-    .innerdarkmodecircle{
+    .innerdarkmodecircle {
         width: 16px;
         height: 16px;
         margin-left: 25px;
     }
-    .headerchildmenulink{
+
+    .headerchildmenulink {
         font-size: 20px;
     }
 }

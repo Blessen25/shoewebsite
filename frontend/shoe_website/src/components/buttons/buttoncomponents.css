@@ -24,12 +24,87 @@
 
 }
 
+.Buttonflexrow {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #808D7C;
+    color: white;
+    border-color: #808D7C;
+    border-radius: 5px;
+    min-width: 8ch;
+    max-width: 35ch;
+    transition: all .7s;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.Buttonflexrow:hover {
+
+    box-shadow: inset 0px 70px 0px 0px #5F6F65;
+    background-color: #808D7C;
+    border-color: #5F6F65;
+
+}
+
+.iconstyle {
+    font-size: 12px;
+    color: white;
+    position: relative;
+    top: -2px;
+}
+
+.Buttonflexrowreverse {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #808D7C;
+    color: white;
+    border-color: #808D7C;
+    border-radius: 5px;
+    min-width: 8ch;
+    max-width: 35ch;
+    transition: all .7s;
+    cursor: pointer;
+    gap: 10px;
+
+}
+
+.Buttonflexrowreverse:hover {
+    box-shadow: inset 0px 70px 0px 0px #5F6F65;
+    background-color: #808D7C;
+    border-color: #5F6F65;
+}
+
 @media screen and (max-width: 991px) and (min-width: 767px) {
     .Buttondiv {
         padding: 6px 16px;
         font-size: 12px;
     }
 
+    .Buttonflexrow {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    .Buttonflexrowreverse {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    .iconstyle {
+        font-size: 10px;
+        top: -1px;
+    }
 
 }
 
@@ -38,11 +113,41 @@
         padding: 6px 16px;
         font-size: 12px;
     }
+
+    .Buttonflexrow {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    .Buttonflexrowreverse {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    .iconstyle {
+        font-size: 10px;
+        top: -1px;
+    }
 }
 
 @media screen and (max-width: 575px) {
     .Buttondiv {
         padding: 5px 12px;
         font-size: 10px;
+    }
+
+    .Buttonflexrow {
+        padding: 5px 12px;
+        font-size: 10px;
+    }
+
+    .Buttonflexrowreverse {
+        padding: 5px 12px;
+        font-size: 10px;
+    }
+
+    .iconstyle {
+        font-size: 8px;
+        top: -1px;
     }
 }

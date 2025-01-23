@@ -12,7 +12,7 @@ const Header_comp = () => {
         setLightMode((prevval) => !prevval)
     }
 
-    const handleactiveSlider = () =>{
+    const handleactiveSlider = () => {
         setactiveSlider((prevval) => !prevval)
         console.log(activeslider)
     }
@@ -22,7 +22,7 @@ const Header_comp = () => {
         <>
             <section id='Header'>
                 <div className="headerchildmenulink" onClick={handleactiveSlider}>
-                    <FaBars/>
+                    <FaBars />
                 </div>
                 <div className="headerchildone">
                     <div className="logodiv">
@@ -36,8 +36,8 @@ const Header_comp = () => {
                     <a href="#">Collection</a>
                 </div>
                 <div className="headerchildthree">
-                    <ButtonTextOnly link={true} text='Login' fullwidth={false} />
-                    {/* <ButtontextandIcon link={false} text='Login' fullwidth={false} route='#' icon={<FaUserAlt />} /> */}
+                    {/* <ButtonTextOnly link={true} text='Login' fullwidth={false}  /> */}
+                    <ButtontextandIcon link={true} text='Login' fullwidth={false} route='#' icon={<FaUserAlt />} />
                     <div className={`${lightmode ? ('lightmodediv') : ('darkmode')}`}>
                         <div className={`${lightmode ? ('innerlightmodecircle') : ('innerdarkmodecircle')}`} onClick={handlelightmodechange}>
 
