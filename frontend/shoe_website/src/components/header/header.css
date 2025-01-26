@@ -116,6 +116,12 @@
 .innerlightmodecircle:hover {
     background-color: #5F6F65;
 }
+.overlaysidebar{
+    display: none;
+}
+.sidebar{
+    display: none;
+}
 
 
 @media screen and (min-width: 767px) {
@@ -219,13 +225,15 @@
     }
 
     .overlaysidebar {
+        display: block;
         position: fixed;
         height: 100vh;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0.2;
+        opacity: 0.1;
         pointer-events: none;
         transition: .3s ease;
+        backdrop-filter: blur(10px);
         z-index: 1000;
     }
 
@@ -237,12 +245,51 @@
         width: 250px;
         z-index: 1001;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
     }
 
-    .sidebar a {
+    .sidebardiv{
+        height: 46px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .sidebaratag{
+        width: 120px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
         color: white;
+        position: relative;
+        transition: all .7s;
+    }
+
+    .sidebaratag:hover{
+        .sidebaricon{
+        font-size: 16px;
+        color: #5F6F65;
+        }
+        p{
+        font-size: 16px;
+        color: #5F6F65;
+        }
+    }
+
+    
+    .sidebaricon{
+        font-size: 15px;
+        width: 30%;
+        justify-content: start;
+        position: relative;
+        top: -1px;
+        transition: all .7s;
+    }
+    .sidebaratag p{
+        font-size: 15px;
+        width: 70%;
+        transition: all .7s;
 
     }
 }

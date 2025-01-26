@@ -45,10 +45,38 @@ const Header_comp = () => {
                     </div>
                 </div>
             </section>
-            <div className="overlaysidebar"></div>
-            <div className="sidebar">
-                <div><a href="#"><span><FaHome /></span>Home</a></div>
-            </div>
+            { activeslider ? (
+                <>
+                <div className="overlaysidebar"></div>
+                <div className="sidebar">
+                    <div className='sidebardiv'>
+                        <a href="/" className='sidebaratag'>
+                            <div className="sidebaricon"><FaHome/></div>
+                            <p>Home</p>
+                        </a>
+                    </div>
+                    <div className='sidebardiv'>
+                        <a href="/" className='sidebaratag'>
+                            <div className="sidebaricon"><FaHome/></div>
+                            <p>Shoe</p>
+                        </a>
+                    </div>
+                    <div className='sidebardiv'>
+                        <a href="/" className='sidebaratag'>
+                            <div className="sidebaricon"><FaHome/></div>
+                            <p>About</p>
+                        </a>
+                    </div>
+                    <div className='sidebardiv'>
+                        <a href="/" className='sidebaratag'>
+                            <div className="sidebaricon"><FaHome/></div>
+                            <p>Collection</p>
+                        </a>
+                    </div>
+
+                </div>
+                </>
+            ) : ('') }
         </>
     )
 }
