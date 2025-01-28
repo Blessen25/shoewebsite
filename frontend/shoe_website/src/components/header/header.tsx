@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './header.css'
 import { ButtontextandIcon, ButtonTextOnly } from '../buttons/buttoncomponents.tsx';
-import { FaBars, FaHome, FaLink, FaUserAlt } from 'react-icons/fa';
+import { FaBars, FaHome, FaInfoCircle, FaLink, FaShoePrints, FaThLarge, FaUserAlt } from 'react-icons/fa';
+import { FaShoelace } from 'react-icons/fa6';
 
 const Header_comp = () => {
 
@@ -57,19 +58,19 @@ const Header_comp = () => {
                     </div>
                     <div className='sidebardiv'>
                         <a href="/" className='sidebaratag'>
-                            <div className="sidebaricon"><FaHome/></div>
+                            <div className="sidebaricon"><FaShoePrints/></div>
                             <p>Shoe</p>
                         </a>
                     </div>
                     <div className='sidebardiv'>
                         <a href="/" className='sidebaratag'>
-                            <div className="sidebaricon"><FaHome/></div>
+                            <div className="sidebaricon"><FaInfoCircle/></div>
                             <p>About</p>
                         </a>
                     </div>
                     <div className='sidebardiv'>
                         <a href="/" className='sidebaratag'>
-                            <div className="sidebaricon"><FaHome/></div>
+                            <div className="sidebaricon"><FaThLarge/></div>
                             <p>Collection</p>
                         </a>
                     </div>
