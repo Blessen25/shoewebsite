@@ -1,10 +1,20 @@
+#Home{
+    position: relative;
+    /* top: 120px; */
+}
 .homeparentdiv{
-    border: 2px solid black;
-    height: 700px;
+    height: 600px;
     width: 100%;
 }
 .imagedivhome{
+    background-image:url('../../../public/assets/images/shoes/grassshoes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 600px;
+}
+
+@media screen and (max-width:575px) {
+    
 }

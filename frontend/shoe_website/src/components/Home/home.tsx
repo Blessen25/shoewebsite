@@ -7,8 +7,9 @@ const Home = () => {
     <>
           <section id='Home'>
             <div className="homeparentdiv">
-              <img src="./assets/images/shoes/grassshoes.jpg" alt="" className='imagedivhome'/>
-              
+              <div className='imagedivhome'>
+
+              </div>
             </div>
           </section>
     </>

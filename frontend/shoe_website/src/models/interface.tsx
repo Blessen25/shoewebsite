@@ -17,3 +17,7 @@ export interface ButtontextandIconProps {
     route?: string;
     stylecstm?: CSSProperties;
 }
+
+export interface HeaderProps{
+    transparent : boolean;
+}

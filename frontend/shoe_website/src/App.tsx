@@ -11,10 +11,17 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 const App = () => {
   return (
     <Router>
-      <Header_comp />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/About' element={<About />} />
+        <Route path='/' element={
+          <>
+          <Header_comp transparent={true}/>
+          <Home />
+          </>} />
+        <Route path='/About' element={
+          <>
+          <Header_comp transparent={false}/>
+          <About />
+          </>} />
       </Routes>
     </Router>
   )
